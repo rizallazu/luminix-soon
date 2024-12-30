@@ -46,6 +46,7 @@ const config: Config = {
           2: "#eb4245",
           3: "#db1f22",
         },
+        "dark":"#0B0B0B",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
