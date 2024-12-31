@@ -10,6 +10,48 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .h1 {
+    font-size: 28px;
+  }
+  .h2 {
+    font-size: 22px;
+  }
+  .h3 {
+    font-size: 18px;
+  }
+  .h4 {
+    font-size: 15.5px;
+  }
+  .p {
+    font-size: 14px
+  }
+  .m {
+    font-size: 14px;
+  }
+  .s {
+    font-size: 12px;
+  }
+  
+  @screen lg {
+    .h1 {
+      font-size: 64px;
+    }
+    .h2 {
+      font-size: 48px;
+    }
+    .h3 {
+      font-size: 36px;
+    }
+    .h4 {
+      font-size: 24px;
+    }
+    .p {
+      font-size: 18px
+    }
+  }
+
+
 }
 
 @layer base {
