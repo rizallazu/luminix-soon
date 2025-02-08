@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const index = () => {
   return (
-    <header className="w-full px-5 lg:px-[10vw] py-4 lg:py-[4vwh] flex justify-between items-center fixed top-0 left-0">
+    <header className="w-full px-5 lg:px-[10vw] py-4 lg:py-[4vwh] flex justify-between items-center fixed top-0 left-0 z-50">
       <div className="flex items-center gap-2 py-5">
         <Image
           alt="logo"
