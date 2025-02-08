@@ -55,7 +55,7 @@ const Services = () => {
     };
   }, []);
   return (
-    <div className="w-full min-h-[50px] h-[3vh] px-4 py-2 flex items-center gap-5 overflow-hidden relative">
+    <div className="w-full min-h-[50px] h-[3vh] px-4 py-2 flex items-center gap-5 overflow-hidden relative mt-10 mb-5 lg:my-0">
       <div className="absolute aspect-square min-h-[50px] bg-black blur-lgl top-0 left-0"></div>
       <div ref={carouselRef} className="flex gap-5">
         {[...services, ...services].map((service, index) => (

@@ -1,7 +1,6 @@
+
 import { manrope, syncopate } from "@/lib/font";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-import LetsTalk from "./component/Button/LetsTalk";
 import { Metadata } from "next";
 import MainHeader from "./component/header";
 import Hero from "./component/section/Hero";
@@ -24,6 +23,7 @@ export default function Home() {
       <main className="py-10 lg:py-[10vh]">
         <Hero />
       </main>
+      
     </div>
   );
 }

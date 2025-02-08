@@ -1,0 +1,38 @@
+.header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    mix-blend-mode: hard-light;
+    z-index: 1;
+    .burger{
+        position: relative;       
+        padding: 30px;
+        pointer-events: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // &::before, &::after{
+        //     content: "Lets Talk";
+        //     display: block;
+        //     width: 30px;
+        //     height: 2px;
+        //     mix-blend-mode: difference;
+        //     background-color: white;
+        // }
+    }
+    .bounds{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: all;
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+}
