@@ -33,7 +33,7 @@ const Services = () => {
     // Animate the carousel
     let animation: number;
     const animate = () => {
-      carousel.style.transition = "transform 20s linear";
+      carousel.style.transition = "transform 40s linear";
       carousel.style.transform = `translateX(-${totalWidth / 2}px)`;
 
       animation = requestAnimationFrame(animate);

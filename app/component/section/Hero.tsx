@@ -43,7 +43,7 @@ const Hero = () => {
             width={0}
             height={0}
             sizes="100"
-            className="md:min-w-[600px] w-[80vw] md:w-[140] relative top-[10vh] md:-top-[10vh] -translate-y-1/2 md:-translate-y-1/4 -translate-x-1/2 left-1/2 animate"
+            className="md:min-w-[600px] w-[80vw] md:w-[140] relative top-[10vh] md:-top-[10vh] -translate-y-1/2 md:-translate-y-1/4 -translate-x-1/2 left-1/2 "
           />
         </div>
         <div
