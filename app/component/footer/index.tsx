@@ -5,11 +5,13 @@ import { Cursor } from "@phosphor-icons/react";
 import Image from "next/image";
 import React from "react";
 import { cn } from "@/lib/utils";
-import { manrope, syncopate } from "@/lib/font";
+import { manrope, monaSans } from "@/lib/font";
+import Gravity from "./Gravity";
 
 const index = () => {
+  
   return (
-    <footer className="min-h-svh relative">
+    <footer className="h-[90svh] relative">
       <div className="flex items-center justify-between text-white">
         <div className="s text-neutral-700">
           <p>Get in touch</p>
@@ -30,8 +32,8 @@ const index = () => {
           <p>new project</p>
         </div>
       </div>
-      <div className="h-svh w-full overflow-hidden text-white relative">
-        <div className="border-white border w-fit px-7 py-5 h3 relative ml-10 my-10">
+      <div className="h-[80svh] min-h-[400px] w-full overflow-hidden text-white relative">
+        <div className="border-white border w-fit px-7 py-5 h3 relative ml-10 mt-10">
           <Cursor
             className="text-primary-500 absolute -bottom-10 right-1/3 -translate-x-1/4 animate-bounce"
             size={40}
@@ -51,6 +53,9 @@ const index = () => {
           <Button className="text-white bg-primary-500 rounded-full">
             Start Project
           </Button>
+        </div>
+        <div className="">
+          <Gravity />
         </div>
         <h3
           className={cn(
