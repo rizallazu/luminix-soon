@@ -8,13 +8,13 @@ import Menubar from "./component/menubar";
 import Service from "./component/section/Service";
 import Work from "./component/section/Work";
 import Team from "./component/section/Team";
+import Cube from "./cube/components/Cube";
 
 export const metadata: Metadata = {
   title: "Luminix Pixel Web Studio",
   description: "Create your immersive and next gen web with us!",
   icons: "/img/logo.svg",
 };
-
 
 export default function Home() {
   return (
@@ -28,6 +28,9 @@ export default function Home() {
         <MainHeader />
         <main className="py-10 lg:py-[10vh] relative">
           <Hero />
+          <div className="w-screen min-h-screen absolute top-0 left-1/2 translate-y-[15vh] -translate-x-1/3 z-0 grid place-content-center ">
+            <Cube />
+          </div>
           <Service />
           <Work />
           <Team />
