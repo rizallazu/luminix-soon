@@ -8,7 +8,7 @@ import Menubar from "./component/menubar";
 import Service from "./component/section/Service";
 import Work from "./component/section/Work";
 import Team from "./component/section/Team";
-import ContainerLenis from "./component/section/ContainerLenis";
+// import ContainerLenis from "./component/section/ContainerLenis";
 
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <ContainerLenis>
+    {/* <ContainerLenis> */}
       <div
         className={cn(
           monaSans.className,
@@ -38,6 +38,6 @@ export default function Home() {
       <div className="w-full max-w-full overflow-x-hidden  bg-dark px-5 lg:px-[10vw] py-4 lg:py-[5vh] relative z-[70]">
         <Footer />
       </div>
-    </ContainerLenis>
+    {/* </ContainerLenis> */}
   );
 }
