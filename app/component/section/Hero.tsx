@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Services from "../header/Services";
 import { cn } from "@/lib/utils";
-import { manrope, syncopate } from "@/lib/font";
+import { manrope } from "@/lib/font";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";

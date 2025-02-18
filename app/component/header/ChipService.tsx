@@ -1,15 +1,10 @@
 import Image from "next/image";
-import React from "react";
 
-type Props = {
-  service: string;
-};
-
-const ChipService = ({ service }: Props) => {
+const ChipService = ({ service }: { service: string }) => {
   return (
-    <div className="flex items-center gap-3 text-white min-w-max">
+    <div className="py-1 bg-white/10 rounded-full whitespace-nowrap text-white text-sm hover:bg-white/20 transition-colors flex gap-5 justify-center items-center px-7">
       <Image alt="divide" src={"/img/divider.svg"} width={20} height={20} />
-      <span className="m w-full">{service}</span>
+      {service}
     </div>
   );
 };

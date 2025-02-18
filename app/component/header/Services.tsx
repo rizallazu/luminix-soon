@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useRef } from "react";
 import ChipService from "./ChipService";
 
@@ -17,52 +16,62 @@ const services = [
 ];
 
 const Services = () => {
-  const carouselRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const carousel: any = carouselRef.current;
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
 
-    // Duplicate the services to create a seamless loop
-    const duplicatedServices = [...services, ...services];
+    // Clone the content for seamless scrolling
+    const content = scrollContainer.querySelector('.scroll-content');
+    if (!content) return;
 
-    // Calculate the total width of the carousel
-    const totalWidth = duplicatedServices.length * 150; // Adjust 150px to match your chip width
+    const clone = content.cloneNode(true);
+    scrollContainer.appendChild(clone);
 
-    // Apply the width to the carousel
-    carousel.style.width = `${totalWidth}px`;
+    // Add CSS animation
+    scrollContainer.style.animation = 'scroll 20s linear infinite';
 
-    // Animate the carousel
-    let animation: number;
-    const animate = () => {
-      carousel.style.transition = "transform 40s linear";
-      carousel.style.transform = `translateX(-${totalWidth / 2}px)`;
-
-      animation = requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    // Reset the carousel position when it reaches the end
-    carousel.addEventListener("transitionend", () => {
-      carousel.style.transition = "none";
-      carousel.style.transform = "translateX(0)";
-      setTimeout(() => {
-        carousel.style.transition = "transform 20s linear";
-      }, 0);
-    });
+    // Define keyframe animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+    `;
+    document.head.appendChild(style);
 
     return () => {
-      cancelAnimationFrame(animation);
+      document.head.removeChild(style);
     };
   }, []);
+
   return (
-    <div className="w-full min-h-[50px] h-[3vh] px-4 py-2 flex items-center gap-5 overflow-hidden relative mt-10 mb-5 lg:my-0">
-      <div className="absolute aspect-square min-h-[50px] bg-black blur-lgl top-0 left-0"></div>
-      <div ref={carouselRef} className="flex gap-5">
-        {[...services, ...services].map((service, index) => (
-          <ChipService key={index} service={service} />
-        ))}
+    <div className="w-full h-[50px] relative overflow-hidden">
+      {/* Gradient Overlay Left */}
+      <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-black to-transparent z-10" />
+      
+      <div 
+        ref={scrollRef}
+        className="flex whitespace-nowrap"
+        style={{
+          willChange: 'transform'
+        }}
+      >
+        <div className="flex gap-5 scroll-content">
+          {services.map((service, idx) => (
+            <ChipService key={`${service}-${idx}`} service={service} />
+          ))}
+        </div>
       </div>
-      <div className="absolute aspect-square min-h-[50px] bg-black blur-xl top-0 right-0"></div>
+
+      {/* Gradient Overlay Right */}
+      <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-black to-transparent z-10" />
     </div>
   );
 };
