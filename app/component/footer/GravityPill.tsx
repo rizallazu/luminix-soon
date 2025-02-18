@@ -12,7 +12,7 @@ const GravityPill = ({ label }: { label: string }) => {
   const bounceDamping = 0.7;
 
   useEffect(() => {
-    const containerHeight = 0.4 * window.innerHeight;
+    const containerHeight = 0.35 * window.innerHeight;
     const pillHeight: any = pillRef.current?.clientHeight || 0;
 
     const handleScroll = () => {
@@ -95,7 +95,7 @@ export default function GravityPillContainer() {
     const socmedLabels = ["Twitter", "Instagram", "Facebook", "LinkedIn", "YouTube"];
   
     return (
-      <div style={{ position: "relative", height: "41vh", overflow: "hidden" }}>
+      <div style={{ position: "relative", height: "36vh", overflow: "hidden" }}>
         {socmedLabels.map((label, index) => (
           <GravityPill key={index} label={label} />
         ))}
