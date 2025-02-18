@@ -52,7 +52,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="w-full h-[50px] relative overflow-hidden">
+    <div className="w-full h-[50px] relative overflow-hidden mt-10 lg:mt-0">
       {/* Gradient Overlay Left */}
       <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-black to-transparent z-10" />
       

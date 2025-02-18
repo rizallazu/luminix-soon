@@ -7,6 +7,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { manrope, monaSans } from "@/lib/font";
 import Gravity from "./Gravity";
+import GravityPillContainer from "./GravityPill";
 
 const index = () => {
   
@@ -54,8 +55,8 @@ const index = () => {
             Start Project
           </Button>
         </div>
-        <div className="">
-          <Gravity />
+        <div className="h-[200px]">
+          <GravityPillContainer />
         </div>
         <h3
           className={cn(

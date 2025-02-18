@@ -8,6 +8,7 @@ const Work = () => {
   return (
     <section className="min-h-svh w-full" id="work">
       <h2
+        data-aos="fade-left"
         className={cn(
           manrope.className,
           "text-primary-400 p font-semibold  md:tracking-[0.3rem]"
@@ -15,7 +16,9 @@ const Work = () => {
       >
         Our Work
       </h2>
-      <h3 className="h1 font-bold text-white">The next level of product</h3>
+      <h3 data-aos="fade-left" className="h1 font-bold text-white">
+        The next level of product
+      </h3>
       <WorkList />
     </section>
   );

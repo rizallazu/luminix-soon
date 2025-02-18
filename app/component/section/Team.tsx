@@ -7,6 +7,7 @@ const Team = () => {
   return (
     <section className="min-h-svh w-full" id="team">
       <h2
+        data-aos="fade-left"
         className={cn(
           manrope.className,
           "text-primary-400 p font-semibold  md:tracking-[0.3rem] text-center"
@@ -14,7 +15,9 @@ const Team = () => {
       >
         Our Team
       </h2>{" "}
-      <h3 className="h1 font-bold text-white text-center">Meet our talented teams</h3>
+      <h3 data-aos="fade-left" className="h1 font-bold text-white text-center">
+        Meet our talented teams
+      </h3>
       <TeamList />
     </section>
   );
