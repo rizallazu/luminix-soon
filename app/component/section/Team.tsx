@@ -16,7 +16,7 @@ const Team = () => {
         Our Team
       </h2>{" "}
       <h3 data-aos="fade-left" className="h1 font-bold text-white text-center">
-        Meet our talented teams
+        Meet our talented team
       </h3>
       <TeamList />
     </section>
