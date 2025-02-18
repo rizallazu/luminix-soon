@@ -70,7 +70,7 @@ const TeamList = () => {
         <motion.div
           key={key}
           initial={{ width: "20%" }}
-          animate={{ width: team.hovered ? "45%" : "20%" }}
+          animate={{ width: team.hovered ? "40%" : "20%" }}
           transition={
             team.hovered
               ? {
@@ -84,7 +84,7 @@ const TeamList = () => {
           onMouseEnter={() => handleHoverOver(team.name)}
           onMouseLeave={() => handleHoverLeave()}
           className={cn(
-            team.hovered ? "min-w-[45%]" : "max-w-1/5",
+            team.hovered ? "min-w-[40%]" : "max-w-1/5",
             "hidden lg:block w-1/5  h-full border-r-[0.5px] border-neutral-500 text-white text-center relative overflow-x-hidden"
           )}
         >
@@ -98,7 +98,7 @@ const TeamList = () => {
               minWidth: "200px",
               opacity: 0,
               position: "absolute",
-              translateX: "45%",
+              translateX: "40%",
               bottom: 0,
               right: 0,
               zIndex: 3,
