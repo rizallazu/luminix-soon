@@ -12,7 +12,7 @@ import GravityPillContainer from "./GravityPill";
 const index = () => {
   
   return (
-    <footer className="h-[90svh] relative">
+    <footer className="h-[90svh] relative z-20 cursor-auto">
       <div className="flex items-center justify-between text-white">
         <div className="s text-neutral-700">
           <p>Get in touch</p>

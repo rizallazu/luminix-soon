@@ -1,12 +1,11 @@
 import { manrope } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import React from "react";
-import ServiceList from "../List/ServiceList";
 import WorkList from "../List/WorkList";
 
 const Work = () => {
   return (
-    <section className="min-h-svh w-full" id="work">
+    <section className="min-h-svh w-full my-[10vh]" id="work">
       <h2
         data-aos="fade-left"
         className={cn(
