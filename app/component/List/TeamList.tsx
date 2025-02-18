@@ -69,6 +69,8 @@ const TeamList = () => {
       {teams.map((team: TeamList, key: React.Key) => (
         <motion.div
           key={key}
+          data-cursor="big"
+          data-cursorLabel="See Profile"
           initial={{ width: "20%" }}
           animate={{ width: team.hovered ? "40%" : "20%" }}
           transition={
@@ -120,7 +122,7 @@ const TeamList = () => {
               bottom: 0,
               right: 0,
               objectFit: "cover",
-              aspectRatio: 3/4,
+              aspectRatio: 3 / 4,
               objectPosition: "center",
               zIndex: 30,
               translateX: "45%",

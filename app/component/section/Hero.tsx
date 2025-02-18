@@ -21,6 +21,7 @@ const Hero = () => {
           manrope.className,
           "text-[9vw] font-extrabold text-white text-center text-nowrap w-full tracking-[0.35rem] md:tracking-[1rem] relative z-20"
         )}
+       
       >
         LUMINIX PIXEL
       </h1>
