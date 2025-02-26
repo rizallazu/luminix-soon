@@ -29,9 +29,12 @@ const Hero = () => {
             data-aos="fade-left"
             className="col-span-12 md:col-span-3 p text-white relative z-20 order-2 md:order-1"
           >
-            Luminix Pixel is a dynamic digital agency committed to enhancing
-            user experiences by leveraging the latest advancements in
-            technology, ensuring innovative and impactful solutions.
+            Luminix Pixel - We are an indie team of designers and developers
+            committed to enhancing user experiences by leveraging the latest
+            advancements in technology, creating innovative and impactful
+            solutions. We combine creativity, expertise, and a user-centric
+            approach to deliver products that are not only functional but also
+            meaningful.
           </div>
           <div className="col-span-12 md:col-span-6 order-1 md:order-2"></div>
           <div

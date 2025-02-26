@@ -8,10 +8,7 @@ const services = [
   "Web Development",
   "Mobile App Design",
   "UI/UX Design",
-  "Branding",
   "Graphic Design",
-  "SEO Optimization",
-  "E-commerce Solutions",
   "Content Creation",
 ];
 
@@ -23,17 +20,17 @@ const Services = () => {
     if (!scrollContainer) return;
 
     // Clone the content for seamless scrolling
-    const content = scrollContainer.querySelector('.scroll-content');
+    const content = scrollContainer.querySelector(".scroll-content");
     if (!content) return;
 
     const clone = content.cloneNode(true);
     scrollContainer.appendChild(clone);
 
     // Add CSS animation
-    scrollContainer.style.animation = 'scroll 20s linear infinite';
+    scrollContainer.style.animation = "scroll 20s linear infinite";
 
     // Define keyframe animation
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.textContent = `
       @keyframes scroll {
         from {
@@ -55,12 +52,12 @@ const Services = () => {
     <div className="w-full h-[50px] relative overflow-hidden mt-10 lg:mt-0">
       {/* Gradient Overlay Left */}
       <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-black to-transparent z-10" />
-      
-      <div 
+
+      <div
         ref={scrollRef}
         className="flex whitespace-nowrap"
         style={{
-          willChange: 'transform'
+          willChange: "transform",
         }}
       >
         <div className="flex gap-5 scroll-content">
