@@ -32,9 +32,7 @@ const Hero = () => {
             Luminix Pixel - We are an indie team of designers and developers
             committed to enhancing user experiences by leveraging the latest
             advancements in technology, creating innovative and impactful
-            solutions. We combine creativity, expertise, and a user-centric
-            approach to deliver products that are not only functional but also
-            meaningful.
+            solutions.
           </div>
           <div className="col-span-12 md:col-span-6 order-1 md:order-2"></div>
           <div
